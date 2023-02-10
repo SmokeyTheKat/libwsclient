@@ -102,6 +102,7 @@ typedef struct _wsclient {
 	char *URI;
 	int sockfd;
 	int flags;
+	void* data;
 	int (*onopen)(struct _wsclient *);
 	int (*onclose)(struct _wsclient *);
 	int (*onerror)(struct _wsclient *, wsclient_error *err);
